@@ -24,6 +24,12 @@ class DisplayFragment : Fragment() {
 
         val inputText = arguments?.getString("input_text") ?: "No text provided"
         binding.textViewDisplay.text = inputText
+
+        // Обработчик кнопки "Назад"
+        binding.buttonBack.setOnClickListener {
+            // Переходим обратно к первому фрагменту
+            parentFragmentManager.popBackStack()
+        }
     }
 
     override fun onDestroyView() {

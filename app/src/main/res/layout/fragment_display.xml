@@ -12,4 +12,12 @@
         android:text="Displayed text will appear here"
         android:textSize="18sp"
         android:gravity="center" />
+
+    <!-- Кнопка для возврата -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_marginTop="16dp" />
 </LinearLayout>
